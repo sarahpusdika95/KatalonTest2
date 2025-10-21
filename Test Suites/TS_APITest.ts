@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>TS_APITest</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>10</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>true</rerunImmediately>
+   <testSuiteGuid>eb2e3bd8-28d2-403d-be9e-748c3c4cbfbd</testSuiteGuid>
+   <testCaseLink>
+      <guid>5ceb1f9b-a568-468e-aeaa-33e4bfe80772</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC01 API_AddObject</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>bce47794-1fb1-4f40-b33f-b7c742bd26e5</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/TestDataAPI</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>bce47794-1fb1-4f40-b33f-b7c742bd26e5</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Nama TC</value>
+         <variableId>9c699938-87e0-4ae7-a5e3-3fc05437f08a</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>bce47794-1fb1-4f40-b33f-b7c742bd26e5</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Name</value>
+         <variableId>8f1e3caa-cd00-4524-a7a4-c244255d04d6</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>bce47794-1fb1-4f40-b33f-b7c742bd26e5</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Year</value>
+         <variableId>a3b4af2c-d1c1-4269-aa6d-6cad439567a9</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>bce47794-1fb1-4f40-b33f-b7c742bd26e5</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Name</value>
+         <variableId>facd0e71-0d52-47c2-95bf-1ac059f65f7d</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>
