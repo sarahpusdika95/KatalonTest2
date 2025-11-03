@@ -1,0 +1,10 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TS_GitJenkins,Chrome 141.0.7390.77,,,21-10-2025 12:39:30,21-10-2025 12:39:48,17.969s,PASSED
+,,,,,,,
+Test Cases/Login_OrangeHRM,Chrome 141.0.7390.77,,,21-10-2025 12:39:31,21-10-2025 12:39:48,16.735s,PASSED
+"openBrowser(""https://opensource-demo.orangehrmlive.com/"")",Chrome 141.0.7390.77,,,21-10-2025 12:39:32,21-10-2025 12:39:42,9.542s,PASSED
+"setText(findTestObject(""Page_OrangeHRM/txtUsername""), ""Admin"")",Chrome 141.0.7390.77,,,21-10-2025 12:39:42,21-10-2025 12:39:44,1.986s,PASSED
+"setText(findTestObject(""Page_OrangeHRM/txtPass""), ""admin123"")",Chrome 141.0.7390.77,,,21-10-2025 12:39:44,21-10-2025 12:39:44,0.925s,PASSED
+"click(findTestObject(""Page_OrangeHRM/btnLogin""))",Chrome 141.0.7390.77,,,21-10-2025 12:39:44,21-10-2025 12:39:45,0.468s,PASSED
+takeFullPageScreenshot(),Chrome 141.0.7390.77,,,21-10-2025 12:39:45,21-10-2025 12:39:47,1.977s,PASSED
+closeBrowser(),Chrome 141.0.7390.77,,,21-10-2025 12:39:47,21-10-2025 12:39:48,1.202s,PASSED

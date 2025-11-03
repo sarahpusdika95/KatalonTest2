@@ -1,0 +1,13 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TS_APITest,,,,21-10-2025 14:23:51,21-10-2025 14:23:54,3.542s,ERROR
+,,,,,,,
+Test Cases/TC01 API_AddObject,,,,21-10-2025 14:23:54,21-10-2025 14:23:54,0.177s,ERROR
+"DATA BINDING - {""year"":""2019"",""namaTC"":""TC01"",""name"":""Apple MacBook Pro 16""}",,,,,,,
+variable = [:],,,,21-10-2025 14:23:54,21-10-2025 14:23:54,0.002s,PASSED
+"variable.put(""namaTC"", namaTC)",,,,21-10-2025 14:23:54,21-10-2025 14:23:54,0.001s,PASSED
+"comment(""Nama Test Case: "" + namaTC)",,,,21-10-2025 14:23:54,21-10-2025 14:23:54,0.002s,PASSED
+"request = findTestObject(""API_TestObject/AddObjectAPI"", [""url"":""https://api.restful-api.dev""])",,,,21-10-2025 14:23:54,21-10-2025 14:23:54,0.025s,PASSED
+response = sendRequest(request),,,,21-10-2025 14:23:54,21-10-2025 14:23:54,0.120s,PASSED
+bodyResponse = response.getResponseBodyContent(),,,,21-10-2025 14:23:54,21-10-2025 14:23:54,0.001s,PASSED
+comment(bodyResponse),,,,21-10-2025 14:23:54,21-10-2025 14:23:54,0.002s,PASSED
+"mii.JsonParser.compareNameProduct(bodyResponse, name)",,,,21-10-2025 14:23:54,21-10-2025 14:23:54,0.003s,ERROR

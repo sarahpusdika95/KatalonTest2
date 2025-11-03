@@ -1,0 +1,322 @@
+2025-10-21 14:35:47.084 INFO  c.k.katalon.core.main.TestSuiteExecutor  - START Test Suites/TS_APITest
+2025-10-21 14:35:47.219 INFO  c.k.katalon.core.main.TestSuiteExecutor  - userFullName = Siti Sarah Pusdikasari
+2025-10-21 14:35:47.220 INFO  c.k.katalon.core.main.TestSuiteExecutor  - projectName = KatalonTest2
+2025-10-21 14:35:47.221 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostName = HP - DESKTOP-8U19AHR
+2025-10-21 14:35:47.222 INFO  c.k.katalon.core.main.TestSuiteExecutor  - os = Windows 11 64bit
+2025-10-21 14:35:47.222 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostAddress = 192.168.0.110
+2025-10-21 14:35:47.223 INFO  c.k.katalon.core.main.TestSuiteExecutor  - katalonVersion = 10.3.2.0
+2025-10-21 14:35:47.977 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-10-21 14:35:47.977 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/TC01 API_AddObject
+2025-10-21 14:35:48.056 INFO  c.k.katalon.core.main.TestCaseExecutor   - namaTC = TC01
+2025-10-21 14:35:48.057 INFO  c.k.katalon.core.main.TestCaseExecutor   - name = Apple MacBook Pro 16
+2025-10-21 14:35:48.057 INFO  c.k.katalon.core.main.TestCaseExecutor   - year = 2019
+2025-10-21 14:35:48.058 INFO  c.k.katalon.core.main.TestCaseExecutor   - getName = Apple MacBook Pro 16
+2025-10-21 14:35:48.501 DEBUG testcase.TC01 API_AddObject              - 1: variable = [:]
+2025-10-21 14:35:48.504 DEBUG testcase.TC01 API_AddObject              - 2: variable.put("namaTC", namaTC)
+2025-10-21 14:35:48.516 DEBUG testcase.TC01 API_AddObject              - 3: variable.put("name", name)
+2025-10-21 14:35:48.520 DEBUG testcase.TC01 API_AddObject              - 4: variable.put("year", year)
+2025-10-21 14:35:48.524 DEBUG testcase.TC01 API_AddObject              - 5: comment("Nama Test Case: " + namaTC)
+2025-10-21 14:35:48.616 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - Nama Test Case: TC01
+2025-10-21 14:35:48.619 DEBUG testcase.TC01 API_AddObject              - 6: request = findTestObject("API_TestObject/AddObjectAPI", variable)
+2025-10-21 14:35:48.683 DEBUG testcase.TC01 API_AddObject              - 7: response = sendRequest(request)
+2025-10-21 14:35:49.934 INFO  c.k.k.core.webservice.common.HarLogger   - HAR: C:\Users\HP\git\KatalonTest2\Reports\20251021_143542\TS_APITest\20251021_143543\requests\main\AddObjectAPI_0.har
+2025-10-21 14:35:50.008 DEBUG testcase.TC01 API_AddObject              - 8: bodyResponse = response.getResponseBodyContent()
+2025-10-21 14:35:50.016 DEBUG testcase.TC01 API_AddObject              - 9: comment(bodyResponse)
+2025-10-21 14:35:50.020 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - {"id":"ff8081819782e69e019a05b21a761c22","name":"Apple MacBook Pro 16","createdAt":"2025-10-21T07:35:49.623+00:00","data":{"year":2019,"price":1849.99,"CPU model":"2019","Hard disk size":"1 TB"}}
+2025-10-21 14:35:50.021 DEBUG testcase.TC01 API_AddObject              - 10: mii.JsonParser.compareNameProduct(bodyResponse, getName)
+2025-10-21 14:35:50.066 ERROR k.k.c.m.CustomKeywordDelegatingMetaClass - ❌ No such property: name for class: mii.JsonParser
+2025-10-21 14:35:50.068 ERROR c.k.katalon.core.main.TestCaseExecutor   - ❌ Test Cases/TC01 API_AddObject FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: groovy.lang.MissingPropertyException: No such property: name for class: mii.JsonParser
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.throwError(CustomKeywordDelegatingMetaClass.java:101)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:73)
+	at TC01 API_AddObject.run(TC01 API_AddObject:39)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:486)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:477)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:456)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:145)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:104)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:205)
+	at TempTestSuite1761032143644.run(TempTestSuite1761032143644.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: groovy.lang.MissingPropertyException: No such property: name for class: mii.JsonParser
+	at mii.JsonParser.compareNameProduct(JsonParser.groovy:131)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	... 16 more
+
+2025-10-21 14:35:50.073 ERROR c.k.katalon.core.main.TestCaseExecutor   - ❌ Test Cases/TC01 API_AddObject FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: name for class: mii.JsonParser
+	at mii.JsonParser.compareNameProduct(JsonParser.groovy:131)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at TC01 API_AddObject.run(TC01 API_AddObject:39)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:486)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:477)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:456)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:145)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:104)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:205)
+	at TempTestSuite1761032143644.run(TempTestSuite1761032143644.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+2025-10-21 14:35:50.078 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/TC01 API_AddObject
+2025-10-21 14:35:50.087 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-10-21 14:35:50.087 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/TC01 API_AddObject
+2025-10-21 14:35:50.101 INFO  c.k.katalon.core.main.TestCaseExecutor   - namaTC = TC01
+2025-10-21 14:35:50.103 INFO  c.k.katalon.core.main.TestCaseExecutor   - name = Apple MacBook Pro 16
+2025-10-21 14:35:50.103 INFO  c.k.katalon.core.main.TestCaseExecutor   - year = 2019
+2025-10-21 14:35:50.103 INFO  c.k.katalon.core.main.TestCaseExecutor   - getName = Apple MacBook Pro 16
+2025-10-21 14:35:50.107 DEBUG testcase.TC01 API_AddObject              - 1: variable = [:]
+2025-10-21 14:35:50.108 DEBUG testcase.TC01 API_AddObject              - 2: variable.put("namaTC", namaTC)
+2025-10-21 14:35:50.111 DEBUG testcase.TC01 API_AddObject              - 3: variable.put("name", name)
+2025-10-21 14:35:50.113 DEBUG testcase.TC01 API_AddObject              - 4: variable.put("year", year)
+2025-10-21 14:35:50.115 DEBUG testcase.TC01 API_AddObject              - 5: comment("Nama Test Case: " + namaTC)
+2025-10-21 14:35:50.118 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - Nama Test Case: TC01
+2025-10-21 14:35:50.120 DEBUG testcase.TC01 API_AddObject              - 6: request = findTestObject("API_TestObject/AddObjectAPI", variable)
+2025-10-21 14:35:50.127 DEBUG testcase.TC01 API_AddObject              - 7: response = sendRequest(request)
+2025-10-21 14:35:50.248 INFO  c.k.k.core.webservice.common.HarLogger   - HAR: C:\Users\HP\git\KatalonTest2\Reports\20251021_143542\TS_APITest\20251021_143543\requests\main\AddObjectAPI_1.har
+2025-10-21 14:35:50.259 DEBUG testcase.TC01 API_AddObject              - 8: bodyResponse = response.getResponseBodyContent()
+2025-10-21 14:35:50.262 DEBUG testcase.TC01 API_AddObject              - 9: comment(bodyResponse)
+2025-10-21 14:35:50.264 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - {"id":"ff8081819782e69e019a05b21c071c23","name":"Apple MacBook Pro 16","createdAt":"2025-10-21T07:35:50.023+00:00","data":{"year":2019,"price":1849.99,"CPU model":"2019","Hard disk size":"1 TB"}}
+2025-10-21 14:35:50.265 DEBUG testcase.TC01 API_AddObject              - 10: mii.JsonParser.compareNameProduct(bodyResponse, getName)
+2025-10-21 14:35:50.269 ERROR k.k.c.m.CustomKeywordDelegatingMetaClass - ❌ No such property: name for class: mii.JsonParser
+2025-10-21 14:35:50.270 ERROR c.k.katalon.core.main.TestCaseExecutor   - ❌ Test Cases/TC01 API_AddObject FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: groovy.lang.MissingPropertyException: No such property: name for class: mii.JsonParser
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.throwError(CustomKeywordDelegatingMetaClass.java:101)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:73)
+	at TC01 API_AddObject.run(TC01 API_AddObject:39)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:486)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:477)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:456)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:406)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:145)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:104)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:205)
+	at TempTestSuite1761032143644.run(TempTestSuite1761032143644.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: groovy.lang.MissingPropertyException: No such property: name for class: mii.JsonParser
+	at mii.JsonParser.compareNameProduct(JsonParser.groovy:131)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	... 17 more
+
+2025-10-21 14:35:50.273 ERROR c.k.katalon.core.main.TestCaseExecutor   - ❌ Test Cases/TC01 API_AddObject FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: name for class: mii.JsonParser
+	at mii.JsonParser.compareNameProduct(JsonParser.groovy:131)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at TC01 API_AddObject.run(TC01 API_AddObject:39)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:486)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:477)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:456)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:406)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:145)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:104)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:205)
+	at TempTestSuite1761032143644.run(TempTestSuite1761032143644.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+2025-10-21 14:35:50.275 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/TC01 API_AddObject
+2025-10-21 14:35:50.279 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-10-21 14:35:50.280 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/TC01 API_AddObject
+2025-10-21 14:35:50.296 INFO  c.k.katalon.core.main.TestCaseExecutor   - namaTC = TC01
+2025-10-21 14:35:50.296 INFO  c.k.katalon.core.main.TestCaseExecutor   - name = Apple MacBook Pro 16
+2025-10-21 14:35:50.296 INFO  c.k.katalon.core.main.TestCaseExecutor   - year = 2019
+2025-10-21 14:35:50.297 INFO  c.k.katalon.core.main.TestCaseExecutor   - getName = Apple MacBook Pro 16
+2025-10-21 14:35:50.301 DEBUG testcase.TC01 API_AddObject              - 1: variable = [:]
+2025-10-21 14:35:50.303 DEBUG testcase.TC01 API_AddObject              - 2: variable.put("namaTC", namaTC)
+2025-10-21 14:35:50.303 DEBUG testcase.TC01 API_AddObject              - 3: variable.put("name", name)
+2025-10-21 14:35:50.304 DEBUG testcase.TC01 API_AddObject              - 4: variable.put("year", year)
+2025-10-21 14:35:50.304 DEBUG testcase.TC01 API_AddObject              - 5: comment("Nama Test Case: " + namaTC)
+2025-10-21 14:35:50.306 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - Nama Test Case: TC01
+2025-10-21 14:35:50.308 DEBUG testcase.TC01 API_AddObject              - 6: request = findTestObject("API_TestObject/AddObjectAPI", variable)
+2025-10-21 14:35:50.313 DEBUG testcase.TC01 API_AddObject              - 7: response = sendRequest(request)
+2025-10-21 14:35:50.521 INFO  c.k.k.core.webservice.common.HarLogger   - HAR: C:\Users\HP\git\KatalonTest2\Reports\20251021_143542\TS_APITest\20251021_143543\requests\main\AddObjectAPI_2.har
+2025-10-21 14:35:50.530 DEBUG testcase.TC01 API_AddObject              - 8: bodyResponse = response.getResponseBodyContent()
+2025-10-21 14:35:50.530 DEBUG testcase.TC01 API_AddObject              - 9: comment(bodyResponse)
+2025-10-21 14:35:50.533 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - {"id":"ff8081819782e69e019a05b21cc41c24","name":"Apple MacBook Pro 16","createdAt":"2025-10-21T07:35:50.212+00:00","data":{"year":2019,"price":1849.99,"CPU model":"2019","Hard disk size":"1 TB"}}
+2025-10-21 14:35:50.534 DEBUG testcase.TC01 API_AddObject              - 10: mii.JsonParser.compareNameProduct(bodyResponse, getName)
+2025-10-21 14:35:50.536 ERROR k.k.c.m.CustomKeywordDelegatingMetaClass - ❌ No such property: name for class: mii.JsonParser
+2025-10-21 14:35:50.537 ERROR c.k.katalon.core.main.TestCaseExecutor   - ❌ Test Cases/TC01 API_AddObject FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: groovy.lang.MissingPropertyException: No such property: name for class: mii.JsonParser
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.throwError(CustomKeywordDelegatingMetaClass.java:101)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:73)
+	at TC01 API_AddObject.run(TC01 API_AddObject:39)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:486)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:477)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:456)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:406)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:406)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:145)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:104)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:205)
+	at TempTestSuite1761032143644.run(TempTestSuite1761032143644.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: groovy.lang.MissingPropertyException: No such property: name for class: mii.JsonParser
+	at mii.JsonParser.compareNameProduct(JsonParser.groovy:131)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	... 18 more
+
+2025-10-21 14:35:50.540 ERROR c.k.katalon.core.main.TestCaseExecutor   - ❌ Test Cases/TC01 API_AddObject FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: name for class: mii.JsonParser
+	at mii.JsonParser.compareNameProduct(JsonParser.groovy:131)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at TC01 API_AddObject.run(TC01 API_AddObject:39)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:486)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:477)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:456)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:406)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:406)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:145)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:104)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:205)
+	at TempTestSuite1761032143644.run(TempTestSuite1761032143644.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+2025-10-21 14:35:50.543 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/TC01 API_AddObject
+2025-10-21 14:35:50.548 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-10-21 14:35:50.548 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/TC01 API_AddObject
+2025-10-21 14:35:50.563 INFO  c.k.katalon.core.main.TestCaseExecutor   - namaTC = TC01
+2025-10-21 14:35:50.563 INFO  c.k.katalon.core.main.TestCaseExecutor   - name = Apple MacBook Pro 16
+2025-10-21 14:35:50.563 INFO  c.k.katalon.core.main.TestCaseExecutor   - year = 2019
+2025-10-21 14:35:50.564 INFO  c.k.katalon.core.main.TestCaseExecutor   - getName = Apple MacBook Pro 16
+2025-10-21 14:35:50.568 DEBUG testcase.TC01 API_AddObject              - 1: variable = [:]
+2025-10-21 14:35:50.569 DEBUG testcase.TC01 API_AddObject              - 2: variable.put("namaTC", namaTC)
+2025-10-21 14:35:50.570 DEBUG testcase.TC01 API_AddObject              - 3: variable.put("name", name)
+2025-10-21 14:35:50.570 DEBUG testcase.TC01 API_AddObject              - 4: variable.put("year", year)
+2025-10-21 14:35:50.571 DEBUG testcase.TC01 API_AddObject              - 5: comment("Nama Test Case: " + namaTC)
+2025-10-21 14:35:50.572 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - Nama Test Case: TC01
+2025-10-21 14:35:50.573 DEBUG testcase.TC01 API_AddObject              - 6: request = findTestObject("API_TestObject/AddObjectAPI", variable)
+2025-10-21 14:35:50.579 DEBUG testcase.TC01 API_AddObject              - 7: response = sendRequest(request)
+2025-10-21 14:35:50.701 INFO  c.k.k.core.webservice.common.HarLogger   - HAR: C:\Users\HP\git\KatalonTest2\Reports\20251021_143542\TS_APITest\20251021_143543\requests\main\AddObjectAPI_3.har
+2025-10-21 14:35:50.710 DEBUG testcase.TC01 API_AddObject              - 8: bodyResponse = response.getResponseBodyContent()
+2025-10-21 14:35:50.711 DEBUG testcase.TC01 API_AddObject              - 9: comment(bodyResponse)
+2025-10-21 14:35:50.712 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - {"id":"ff8081819782e69e019a05b21dc11c25","name":"Apple MacBook Pro 16","createdAt":"2025-10-21T07:35:50.465+00:00","data":{"year":2019,"price":1849.99,"CPU model":"2019","Hard disk size":"1 TB"}}
+2025-10-21 14:35:50.713 DEBUG testcase.TC01 API_AddObject              - 10: mii.JsonParser.compareNameProduct(bodyResponse, getName)
+2025-10-21 14:35:50.714 ERROR k.k.c.m.CustomKeywordDelegatingMetaClass - ❌ No such property: name for class: mii.JsonParser
+2025-10-21 14:35:50.715 ERROR c.k.katalon.core.main.TestCaseExecutor   - ❌ Test Cases/TC01 API_AddObject FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: groovy.lang.MissingPropertyException: No such property: name for class: mii.JsonParser
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.throwError(CustomKeywordDelegatingMetaClass.java:101)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:73)
+	at TC01 API_AddObject.run(TC01 API_AddObject:39)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:486)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:477)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:456)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:406)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:406)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:406)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:145)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:104)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:205)
+	at TempTestSuite1761032143644.run(TempTestSuite1761032143644.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: groovy.lang.MissingPropertyException: No such property: name for class: mii.JsonParser
+	at mii.JsonParser.compareNameProduct(JsonParser.groovy:131)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	... 19 more
+
+2025-10-21 14:35:50.717 ERROR c.k.katalon.core.main.TestCaseExecutor   - ❌ Test Cases/TC01 API_AddObject FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: name for class: mii.JsonParser
+	at mii.JsonParser.compareNameProduct(JsonParser.groovy:131)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at TC01 API_AddObject.run(TC01 API_AddObject:39)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:486)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:477)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:456)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:406)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:406)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:406)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:145)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:104)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:205)
+	at TempTestSuite1761032143644.run(TempTestSuite1761032143644.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+2025-10-21 14:35:50.719 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/TC01 API_AddObject
+2025-10-21 14:35:50.755 INFO  c.k.katalon.core.main.TestSuiteExecutor  - --------------------
+2025-10-21 14:35:50.755 INFO  c.k.katalon.core.main.TestSuiteExecutor  - END Test Suites/TS_APITest
+2025-10-21 14:35:50.755 INFO  c.k.katalon.core.main.TestSuiteExecutor  - ====================

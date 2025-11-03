@@ -1,0 +1,16 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TS_APITest,,,,03-11-2025 10:39:12,03-11-2025 10:39:21,8.551s,PASSED
+,,,,,,,
+Test Cases/TC01 API_AddObject,,,,03-11-2025 10:39:13,03-11-2025 10:39:21,7.526s,PASSED
+"DATA BINDING - {""getName"":""Apple MacBook Pro 16"",""year"":""2019"",""namaTC"":""TC01"",""name"":""Apple MacBook Pro 16""}",,,,,,,
+variable = [:],,,,03-11-2025 10:39:14,03-11-2025 10:39:14,0.005s,PASSED
+"variable.put(""namaTC"", namaTC)",,,,03-11-2025 10:39:14,03-11-2025 10:39:14,0.016s,PASSED
+"variable.put(""name"", name)",,,,03-11-2025 10:39:14,03-11-2025 10:39:14,0.004s,PASSED
+"variable.put(""year"", year)",,,,03-11-2025 10:39:14,03-11-2025 10:39:14,0.007s,PASSED
+"comment(""Nama Test Case: "" + namaTC)",,,,03-11-2025 10:39:14,03-11-2025 10:39:14,0.121s,PASSED
+"request = findTestObject(""API_TestObject/AddObjectAPI"", variable)",,,,03-11-2025 10:39:14,03-11-2025 10:39:14,0.108s,PASSED
+response = sendRequest(request),,,,03-11-2025 10:39:14,03-11-2025 10:39:16,1.513s,PASSED
+bodyResponse = response.getResponseBodyContent(),,,,03-11-2025 10:39:16,03-11-2025 10:39:16,0.011s,PASSED
+comment(bodyResponse),,,,03-11-2025 10:39:16,03-11-2025 10:39:16,0.003s,PASSED
+"mii.ProductNameComparator.compareNameProduct(bodyResponse, getName)",,,,03-11-2025 10:39:16,03-11-2025 10:39:16,0.110s,PASSED
+delay(5),,,,03-11-2025 10:39:16,03-11-2025 10:39:21,5.018s,PASSED

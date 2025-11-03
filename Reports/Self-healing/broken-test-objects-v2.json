@@ -1,3 +1,14 @@
 {
-  "brokenTestObjects" : [ ]
+  "brokenTestObjects": [
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Page_OrangeHRM/txtUsername",
+      "brokenLocator": "//*[@id \u003d \u00270\u0027]",
+      "brokenLocatorMethod": "BASIC",
+      "proposedLocator": "/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Page_OrangeHRM/txtUsername_XPATH.png"
+    }
+  ]
 }

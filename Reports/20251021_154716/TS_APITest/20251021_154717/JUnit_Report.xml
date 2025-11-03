@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TS_APITest" time="7.677" tests="1" failures="0" errors="0">
+   <testsuite name="TS_APITest" tests="1" failures="0" errors="0" time="7.677" skipped="0" timestamp="2025-10-21T08:47:21.390Z" hostname="HP - DESKTOP-8U19AHR" id="Test Suites/TS_APITest">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="C:\\Users\\HP\\git\\KatalonTest2\\Reports\\20251021_154716\\TS_APITest\\20251021_154717"/>
+         <property name="logFiles" value="C:\\Users\\HP\\git\\KatalonTest2\\Reports\\20251021_154716\\TS_APITest\\20251021_154717\\console0.log, C:\\Users\\HP\\git\\KatalonTest2\\Reports\\20251021_154716\\TS_APITest\\20251021_154717\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="userFullName" value="Siti Sarah Pusdikasari"/>
+         <property name="hostName" value="HP - DESKTOP-8U19AHR"/>
+         <property name="hostAddress" value="192.168.0.110"/>
+         <property name="projectName" value="KatalonTest2"/>
+         <property name="os" value="Windows 11 64bit"/>
+         <property name="katalonVersion" value="10.3.2.0"/>
+      </properties>
+      <testcase name="Test Cases/TC01 API_AddObject" time="6.922" classname="Test Cases/TC01 API_AddObject" status="PASSED">
+         <properties>
+            <property name="data_binding"><![CDATA[{"getName":"Apple MacBook Pro 16","year":"2019","namaTC":"TC01","name":"Apple MacBook Pro 16"}]]></property>
+         </properties>
+         <system-out><![CDATA[21-10-2025T15:47:22 - [TEST_CASE][PASSED] - Test Cases/TC01 API_AddObject: Test Cases/TC01 API_AddObject
+
+21-10-2025T15:47:22 - [TEST_STEP][PASSED] - variable = [:]: null
+
+21-10-2025T15:47:22 - [TEST_STEP][PASSED] - variable.put("namaTC", namaTC): null
+
+21-10-2025T15:47:22 - [TEST_STEP][PASSED] - variable.put("name", name): null
+
+21-10-2025T15:47:22 - [TEST_STEP][PASSED] - variable.put("year", year): null
+
+21-10-2025T15:47:22 - [TEST_STEP][PASSED] - comment("Nama Test Case: " + namaTC): Nama Test Case: TC01
+
+21-10-2025T15:47:22 - [MESSAGE][INFO] - Nama Test Case: TC01
+
+21-10-2025T15:47:22 - [TEST_STEP][PASSED] - request = findTestObject("API_TestObject/AddObjectAPI", variable): null
+
+21-10-2025T15:47:22 - [TEST_STEP][PASSED] - response = sendRequest(request): Send request successfully
+
+21-10-2025T15:47:23 - [MESSAGE][INFO] - HAR: C:\Users\HP\git\KatalonTest2\Reports\20251021_154716\TS_APITest\20251021_154717\requests\main\AddObjectAPI_0.har
+
+21-10-2025T15:47:23 - [MESSAGE][PASSED] - Send request successfully
+
+21-10-2025T15:47:23 - [TEST_STEP][PASSED] - bodyResponse = response.getResponseBodyContent(): null
+
+21-10-2025T15:47:23 - [TEST_STEP][PASSED] - comment(bodyResponse): {"id":"ff8081819782e69e019a05f39f061d23","name":"Apple MacBook Pro 16","createdAt":"2025-10-21T08:47:23.398+00:00","data":{"year":2019,"price":1849.99,"CPU model":"2019","Hard disk size":"1 TB"}}
+
+21-10-2025T15:47:23 - [MESSAGE][INFO] - {"id":"ff8081819782e69e019a05f39f061d23","name":"Apple MacBook Pro 16","createdAt":"2025-10-21T08:47:23.398+00:00","data":{"year":2019,"price":1849.99,"CPU model":"2019","Hard disk size":"1 TB"}}
+
+21-10-2025T15:47:23 - [TEST_STEP][PASSED] - mii.ProductNameComparator.compareNameProduct(bodyResponse, getName): Actual Name Data Product Match Test Data: Apple MacBook Pro 16
+
+21-10-2025T15:47:24 - [MESSAGE][PASSED] - Actual Name Data Product Match Test Data: Apple MacBook Pro 16
+
+21-10-2025T15:47:24 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+21-10-2025T15:47:29 - [MESSAGE][PASSED] - Delayed 5 second(s)]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[21-10-2025T15:47:21 - [TEST_SUITE][PASSED] - TS_APITest: null]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

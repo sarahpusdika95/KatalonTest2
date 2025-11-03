@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TS_APITest" time="23.474" tests="1" failures="1" errors="0">
+   <testsuite name="TS_APITest" tests="1" failures="1" errors="0" time="23.474" skipped="0" timestamp="2025-10-21T07:25:00.145Z" hostname="HP - DESKTOP-8U19AHR" id="Test Suites/TS_APITest">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="C:\\Users\\HP\\git\\KatalonTest2\\Reports\\20251021_142456\\TS_APITest\\20251021_142456"/>
+         <property name="logFiles" value="C:\\Users\\HP\\git\\KatalonTest2\\Reports\\20251021_142456\\TS_APITest\\20251021_142456\\console0.log, C:\\Users\\HP\\git\\KatalonTest2\\Reports\\20251021_142456\\TS_APITest\\20251021_142456\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="userFullName" value="Siti Sarah Pusdikasari"/>
+         <property name="hostName" value="HP - DESKTOP-8U19AHR"/>
+         <property name="hostAddress" value="192.168.0.110"/>
+         <property name="projectName" value="KatalonTest2"/>
+         <property name="os" value="Windows 11 64bit"/>
+         <property name="katalonVersion" value="10.3.2.0"/>
+      </properties>
+      <testcase name="Test Cases/TC01 API_AddObject" time="5.181" classname="Test Cases/TC01 API_AddObject" status="FAILED">
+         <properties>
+            <property name="data_binding"><![CDATA[{"year":"2019","namaTC":"TC01","name":"Apple MacBook Pro 16"}]]></property>
+         </properties>
+         <failure type="FAILED" message="Test Cases/TC01 API_AddObject FAILED.&#xa;Reason:&#xa;com.kms.katalon.core.exception.StepFailedException: Name Data Product: ${name}&#xa;	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)&#xa;	at mii.JsonParser.compareNameProduct(JsonParser.groovy:136)&#xa;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#xa;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)&#xa;	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#xa;	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)&#xa;	at TC01 API_AddObject.run(TC01 API_AddObject:35)&#xa;	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xa;	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:486)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:477)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:456)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:448)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:322)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:406)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:406)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:406)&#xa;	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)&#xa;	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:145)&#xa;	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:104)&#xa;	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:205)&#xa;	at TempTestSuite1761031496362.run(TempTestSuite1761031496362.groovy:35)&#xa;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#xa;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)&#xa;	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#xa;"/>
+         <system-out><![CDATA[21-10-2025T14:25:18 - [TEST_CASE][FAILED] - Test Cases/TC01 API_AddObject: Test Cases/TC01 API_AddObject FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Name Data Product: ${name}
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at mii.JsonParser.compareNameProduct(JsonParser.groovy:136)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at TC01 API_AddObject.run(TC01 API_AddObject:35)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:486)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:477)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:456)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:406)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:406)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:406)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:145)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:104)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:205)
+	at TempTestSuite1761031496362.run(TempTestSuite1761031496362.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+21-10-2025T14:25:18 - [TEST_STEP][PASSED] - variable = [:]: null
+
+21-10-2025T14:25:18 - [TEST_STEP][PASSED] - variable.put("namaTC", namaTC): null
+
+21-10-2025T14:25:18 - [TEST_STEP][PASSED] - comment("Nama Test Case: " + namaTC): Nama Test Case: TC01
+
+21-10-2025T14:25:18 - [MESSAGE][INFO] - Nama Test Case: TC01
+
+21-10-2025T14:25:18 - [TEST_STEP][PASSED] - request = findTestObject("API_TestObject/AddObjectAPI", ["url":"https://api.restful-api.dev"]): null
+
+21-10-2025T14:25:18 - [TEST_STEP][PASSED] - response = sendRequest(request): Send request successfully
+
+21-10-2025T14:25:18 - [MESSAGE][INFO] - HAR: C:\Users\HP\git\KatalonTest2\Reports\20251021_142456\TS_APITest\20251021_142456\requests\main\AddObjectAPI_3.har
+
+21-10-2025T14:25:18 - [MESSAGE][PASSED] - Send request successfully
+
+21-10-2025T14:25:18 - [TEST_STEP][PASSED] - bodyResponse = response.getResponseBodyContent(): null
+
+21-10-2025T14:25:18 - [TEST_STEP][PASSED] - comment(bodyResponse): {"id":"ff8081819782e69e019a05a878ae1c17","name":"${name}","createdAt":"2025-10-21T07:25:18.382+00:00","data":{"year":2019,"price":1849.99,"CPU model":"${year}","Hard disk size":"1 TB"}}
+
+21-10-2025T14:25:18 - [MESSAGE][INFO] - {"id":"ff8081819782e69e019a05a878ae1c17","name":"${name}","createdAt":"2025-10-21T07:25:18.382+00:00","data":{"year":2019,"price":1849.99,"CPU model":"${year}","Hard disk size":"1 TB"}}
+
+21-10-2025T14:25:18 - [TEST_STEP][FAILED] - mii.JsonParser.compareNameProduct(bodyResponse, name): com.kms.katalon.core.exception.StepFailedException: Name Data Product: ${name}
+
+21-10-2025T14:25:18 - [MESSAGE][FAILED] - Name Data Product: ${name}
+
+21-10-2025T14:25:18 - [MESSAGE][FAILED] - com.kms.katalon.core.exception.StepFailedException: Name Data Product: ${name}
+
+21-10-2025T14:25:18 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+21-10-2025T14:25:23 - [MESSAGE][PASSED] - Delayed 5 second(s)]]></system-out>
+         <system-err><![CDATA[21-10-2025T14:25:18 - [TEST_CASE][FAILED] - Test Cases/TC01 API_AddObject: Test Cases/TC01 API_AddObject FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Name Data Product: ${name}
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at mii.JsonParser.compareNameProduct(JsonParser.groovy:136)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:55)
+	at TC01 API_AddObject.run(TC01 API_AddObject:35)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:486)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:477)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:456)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:406)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:406)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:406)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:145)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:104)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:205)
+	at TempTestSuite1761031496362.run(TempTestSuite1761031496362.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[21-10-2025T14:25:00 - [TEST_SUITE][FAILED] - TS_APITest: null]]></system-out>
+      <system-err><![CDATA[21-10-2025T14:25:00 - [TEST_SUITE][FAILED] - TS_APITest: null]]></system-err>
+   </testsuite>
+</testsuites>

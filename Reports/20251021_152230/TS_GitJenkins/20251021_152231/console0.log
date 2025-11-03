@@ -1,0 +1,29 @@
+2025-10-21 15:22:36.072 INFO  c.k.katalon.core.main.TestSuiteExecutor  - START Test Suites/TS_GitJenkins
+2025-10-21 15:22:36.216 INFO  c.k.katalon.core.main.TestSuiteExecutor  - userFullName = Siti Sarah Pusdikasari
+2025-10-21 15:22:36.217 INFO  c.k.katalon.core.main.TestSuiteExecutor  - projectName = KatalonTest2
+2025-10-21 15:22:36.218 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostName = HP - DESKTOP-8U19AHR
+2025-10-21 15:22:36.218 INFO  c.k.katalon.core.main.TestSuiteExecutor  - os = Windows 11 64bit
+2025-10-21 15:22:36.219 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostAddress = 192.168.0.110
+2025-10-21 15:22:36.220 INFO  c.k.katalon.core.main.TestSuiteExecutor  - katalonVersion = 10.3.2.0
+2025-10-21 15:22:36.905 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-10-21 15:22:36.905 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/Login_OrangeHRM
+2025-10-21 15:22:37.229 DEBUG testcase.Login_OrangeHRM                 - 1: openBrowser("https://opensource-demo.orangehrmlive.com/")
+2025-10-21 15:22:37.533 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2025-10-21 15:22:37.591 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+Oct 21, 2025 3:22:39 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 141, returning the closest version; found: 138; Please update to a Selenium version that supports CDP version 141
+2025-10-21 15:22:39.719 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 6246ee8c3d97bdc19492c806cd183d80
+2025-10-21 15:22:39.720 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 141.0.7390.77
+2025-10-21 15:22:39.721 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2025-10-21 15:22:39.721 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.28.1
+2025-10-21 15:22:39.732 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2025-10-21 15:22:43.510 DEBUG testcase.Login_OrangeHRM                 - 2: setText(findTestObject("Page_OrangeHRM/txtUsername"), "Admin")
+2025-10-21 15:22:44.831 DEBUG testcase.Login_OrangeHRM                 - 3: setText(findTestObject("Page_OrangeHRM/txtPass"), "admin123")
+2025-10-21 15:22:45.443 DEBUG testcase.Login_OrangeHRM                 - 4: click(findTestObject("Page_OrangeHRM/btnLogin"))
+2025-10-21 15:22:45.760 DEBUG testcase.Login_OrangeHRM                 - 5: takeFullPageScreenshot()
+2025-10-21 15:22:47.065 INFO  c.kms.katalon.core.webui.util.FileUtil   - 0 hidden object(s)
+2025-10-21 15:22:47.164 DEBUG testcase.Login_OrangeHRM                 - 6: closeBrowser()
+2025-10-21 15:22:47.598 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/Login_OrangeHRM
+2025-10-21 15:22:47.635 INFO  c.k.katalon.core.main.TestSuiteExecutor  - --------------------
+2025-10-21 15:22:47.636 INFO  c.k.katalon.core.main.TestSuiteExecutor  - END Test Suites/TS_GitJenkins
+2025-10-21 15:22:47.636 INFO  c.k.katalon.core.main.TestSuiteExecutor  - ====================

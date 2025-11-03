@@ -1,0 +1,32 @@
+2025-10-21 15:51:46.696 INFO  c.k.katalon.core.main.TestSuiteExecutor  - START Test Suites/TS_APITest
+2025-10-21 15:51:46.828 INFO  c.k.katalon.core.main.TestSuiteExecutor  - userFullName = Siti Sarah Pusdikasari
+2025-10-21 15:51:46.829 INFO  c.k.katalon.core.main.TestSuiteExecutor  - projectName = KatalonTest2
+2025-10-21 15:51:46.830 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostName = HP - DESKTOP-8U19AHR
+2025-10-21 15:51:46.830 INFO  c.k.katalon.core.main.TestSuiteExecutor  - os = Windows 11 64bit
+2025-10-21 15:51:46.830 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostAddress = 192.168.0.110
+2025-10-21 15:51:46.832 INFO  c.k.katalon.core.main.TestSuiteExecutor  - katalonVersion = 10.3.2.0
+2025-10-21 15:51:47.548 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-10-21 15:51:47.549 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/TC01 API_AddObject
+2025-10-21 15:51:47.625 INFO  c.k.katalon.core.main.TestCaseExecutor   - namaTC = TC01
+2025-10-21 15:51:47.627 INFO  c.k.katalon.core.main.TestCaseExecutor   - name = Apple MacBook Pro 16
+2025-10-21 15:51:47.627 INFO  c.k.katalon.core.main.TestCaseExecutor   - year = 2019
+2025-10-21 15:51:47.627 INFO  c.k.katalon.core.main.TestCaseExecutor   - getName = Apple MacBook Pro 16
+2025-10-21 15:51:48.078 DEBUG testcase.TC01 API_AddObject              - 1: variable = [:]
+2025-10-21 15:51:48.083 DEBUG testcase.TC01 API_AddObject              - 2: variable.put("namaTC", namaTC)
+2025-10-21 15:51:48.097 DEBUG testcase.TC01 API_AddObject              - 3: variable.put("name", name)
+2025-10-21 15:51:48.102 DEBUG testcase.TC01 API_AddObject              - 4: variable.put("year", year)
+2025-10-21 15:51:48.107 DEBUG testcase.TC01 API_AddObject              - 5: comment("Nama Test Case: " + namaTC)
+2025-10-21 15:51:48.199 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - Nama Test Case: TC01
+2025-10-21 15:51:48.201 DEBUG testcase.TC01 API_AddObject              - 6: request = findTestObject("API_TestObject/AddObjectAPI", variable)
+2025-10-21 15:51:48.274 DEBUG testcase.TC01 API_AddObject              - 7: response = sendRequest(request)
+2025-10-21 15:51:49.304 INFO  c.k.k.core.webservice.common.HarLogger   - HAR: C:\Users\HP\git\KatalonTest2\Reports\20251021_155142\TS_APITest\20251021_155143\requests\main\AddObjectAPI_0.har
+2025-10-21 15:51:49.379 DEBUG testcase.TC01 API_AddObject              - 8: bodyResponse = response.getResponseBodyContent()
+2025-10-21 15:51:49.386 DEBUG testcase.TC01 API_AddObject              - 9: comment(bodyResponse)
+2025-10-21 15:51:49.391 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - {"id":"ff8081819782e69e019a05f7abec1d31","name":"Apple MacBook Pro 16","createdAt":"2025-10-21T08:51:48.845+00:00","data":{"year":2019,"price":1849.99,"CPU model":"2019","Hard disk size":"1 TB"}}
+2025-10-21 15:51:49.393 DEBUG testcase.TC01 API_AddObject              - 10: mii.ProductNameComparator.compareNameProduct(bodyResponse, getName)
+2025-10-21 15:51:49.488 DEBUG com.kms.katalon.core.util.KeywordUtil    - ✓ Actual Name Data Product Match Test Data: Apple MacBook Pro 16
+2025-10-21 15:51:49.500 DEBUG testcase.TC01 API_AddObject              - 11: delay(5)
+2025-10-21 15:51:54.519 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/TC01 API_AddObject
+2025-10-21 15:51:54.521 INFO  c.k.katalon.core.main.TestSuiteExecutor  - --------------------
+2025-10-21 15:51:54.523 INFO  c.k.katalon.core.main.TestSuiteExecutor  - END Test Suites/TS_APITest
+2025-10-21 15:51:54.523 INFO  c.k.katalon.core.main.TestSuiteExecutor  - ====================

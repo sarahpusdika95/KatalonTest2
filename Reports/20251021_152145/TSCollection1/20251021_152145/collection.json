@@ -1,0 +1,14 @@
+{
+  "id": "Test Suites/TSCollection1",
+  "name": "TSCollection1",
+  "reportFolder": "C:\\Users\\HP\\git\\KatalonTest2\\Reports\\20251021_152145\\TSCollection1\\20251021_152145",
+  "startTime": 1761034908180,
+  "endTime": 1761034919879,
+  "totalPassedTestCases": "1",
+  "totalErrorTestCases": "0",
+  "totalFailedTestCases": "0",
+  "totalTestCases": "1",
+  "totalIncompleteTestCases": "0",
+  "totalSkippedTestCases": "0",
+  "description": ""
+}

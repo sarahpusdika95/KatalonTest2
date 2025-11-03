@@ -1,0 +1,4 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TS_APITest,,,,21-10-2025 14:34:57,21-10-2025 14:34:58,1.131s,ERROR
+,,,,,,,
+Test Cases/TC01 API_AddObject,,,,21-10-2025 14:34:58,21-10-2025 14:34:58,0.030s,ERROR

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TSCollection3" time="15.418" tests="1" failures="0" errors="0">
+   <testsuite name="TS_GitJenkins" tests="1" failures="0" errors="0" time="11.436" skipped="0" timestamp="2025-10-21T08:22:36.163Z" hostname="HP - DESKTOP-8U19AHR" id="Test Suites/TS_GitJenkins">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="C:\\Users\\HP\\git\\KatalonTest2\\Reports\\20251021_152230\\TS_GitJenkins\\20251021_152231"/>
+         <property name="logFiles" value="C:\\Users\\HP\\git\\KatalonTest2\\Reports\\20251021_152230\\TS_GitJenkins\\20251021_152231\\console0.log, C:\\Users\\HP\\git\\KatalonTest2\\Reports\\20251021_152230\\TS_GitJenkins\\20251021_152231\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\HP\\git\\KatalonTest2\\Reports\\20251021_152230\\TS_GitJenkins\\20251021_152231\\1761034965777.png"/>
+         <property name="hostName" value="HP - DESKTOP-8U19AHR"/>
+         <property name="os" value="Windows 11 64bit"/>
+         <property name="katalonVersion" value="10.3.2.0"/>
+         <property name="browser" value="Chrome 141.0.7390.77"/>
+         <property name="userFullName" value="Siti Sarah Pusdikasari"/>
+         <property name="hostAddress" value="192.168.0.110"/>
+         <property name="sessionId" value="6246ee8c3d97bdc19492c806cd183d80"/>
+         <property name="projectName" value="KatalonTest2"/>
+         <property name="seleniumVersion" value="4.28.1"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 11"/>
+      </properties>
+      <testcase name="Test Cases/Login_OrangeHRM" time="10.694" classname="Test Cases/Login_OrangeHRM" status="PASSED">
+         <system-out><![CDATA[21-10-2025T15:22:36 - [TEST_CASE][PASSED] - Test Cases/Login_OrangeHRM: Test Cases/Login_OrangeHRM
+
+21-10-2025T15:22:37 - [TEST_STEP][PASSED] - openBrowser("https://opensource-demo.orangehrmlive.com/"): Browser is opened with url: 'https://opensource-demo.orangehrmlive.com/'
+
+21-10-2025T15:22:37 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+21-10-2025T15:22:37 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+21-10-2025T15:22:43 - [MESSAGE][PASSED] - Browser is opened with url: 'https://opensource-demo.orangehrmlive.com/'
+
+21-10-2025T15:22:43 - [TEST_STEP][PASSED] - setText(findTestObject("Page_OrangeHRM/txtUsername"), "Admin"): Text 'Admin' is set on object 'Object Repository/Page_OrangeHRM/txtUsername'
+
+21-10-2025T15:22:44 - [MESSAGE][PASSED] - Text 'Admin' is set on object 'Object Repository/Page_OrangeHRM/txtUsername'
+
+21-10-2025T15:22:44 - [TEST_STEP][PASSED] - setText(findTestObject("Page_OrangeHRM/txtPass"), "admin123"): Text 'admin123' is set on object 'Object Repository/Page_OrangeHRM/txtPass'
+
+21-10-2025T15:22:45 - [MESSAGE][PASSED] - Text 'admin123' is set on object 'Object Repository/Page_OrangeHRM/txtPass'
+
+21-10-2025T15:22:45 - [TEST_STEP][PASSED] - click(findTestObject("Page_OrangeHRM/btnLogin")): Object: 'Object Repository/Page_OrangeHRM/btnLogin' is clicked on
+
+21-10-2025T15:22:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_OrangeHRM/btnLogin' is clicked on
+
+21-10-2025T15:22:45 - [TEST_STEP][PASSED] - takeFullPageScreenshot(): Taking screenshot successfully
+
+21-10-2025T15:22:47 - [MESSAGE][INFO] - 0 hidden object(s)
+
+21-10-2025T15:22:47 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\HP\\git\\KatalonTest2\\Reports\\20251021_152230\\TS_GitJenkins\\20251021_152231\\1761034965777.png]]
+
+21-10-2025T15:22:47 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+21-10-2025T15:22:47 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[21-10-2025T15:22:36 - [TEST_SUITE][PASSED] - TS_GitJenkins: null]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

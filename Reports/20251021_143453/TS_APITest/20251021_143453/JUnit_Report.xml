@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TS_APITest" time="1.046" tests="1" failures="0" errors="1">
+   <testsuite name="TS_APITest" tests="1" failures="0" errors="1" time="1.046" skipped="0" timestamp="2025-10-21T07:34:57.039Z" hostname="HP - DESKTOP-8U19AHR" id="Test Suites/TS_APITest">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="C:\\Users\\HP\\git\\KatalonTest2\\Reports\\20251021_143453\\TS_APITest\\20251021_143453"/>
+         <property name="logFiles" value="C:\\Users\\HP\\git\\KatalonTest2\\Reports\\20251021_143453\\TS_APITest\\20251021_143453\\console0.log, C:\\Users\\HP\\git\\KatalonTest2\\Reports\\20251021_143453\\TS_APITest\\20251021_143453\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="userFullName" value="Siti Sarah Pusdikasari"/>
+         <property name="hostName" value="HP - DESKTOP-8U19AHR"/>
+         <property name="hostAddress" value="192.168.0.110"/>
+         <property name="projectName" value="KatalonTest2"/>
+         <property name="os" value="Windows 11 64bit"/>
+         <property name="katalonVersion" value="10.3.2.0"/>
+      </properties>
+      <testcase name="Test Cases/TC01 API_AddObject" time="0.03" classname="Test Cases/TC01 API_AddObject" status="ERROR">
+         <error type="ERROR" message="Test Cases/TC01 API_AddObject has ERROR(s).&#xa;Reason:&#xa;org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:&#xa;Script325251793232600.groovy: 30: Unexpected input: '(' @ line 30, column 39.&#xa;   RequestObject request = findTestObject('API_TestObject/AddObjectAPI', , variable)&#xa;                                         ^&#xa;&#xa;1 error&#xa;"/>
+         <system-out><![CDATA[21-10-2025T14:34:58 - [TEST_CASE][ERROR] - Test Cases/TC01 API_AddObject: Test Cases/TC01 API_AddObject has ERROR(s).
+Reason:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+Script325251793232600.groovy: 30: Unexpected input: '(' @ line 30, column 39.
+   RequestObject request = findTestObject('API_TestObject/AddObjectAPI', , variable)
+                                         ^
+
+1 error]]></system-out>
+         <system-err><![CDATA[21-10-2025T14:34:58 - [TEST_CASE][ERROR] - Test Cases/TC01 API_AddObject: Test Cases/TC01 API_AddObject has ERROR(s).
+Reason:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+Script325251793232600.groovy: 30: Unexpected input: '(' @ line 30, column 39.
+   RequestObject request = findTestObject('API_TestObject/AddObjectAPI', , variable)
+                                         ^
+
+1 error]]></system-err>
+      </testcase>
+      <system-out><![CDATA[21-10-2025T14:34:57 - [TEST_SUITE][ERROR] - TS_APITest: null]]></system-out>
+      <system-err><![CDATA[21-10-2025T14:34:57 - [TEST_SUITE][ERROR] - TS_APITest: null]]></system-err>
+   </testsuite>
+</testsuites>

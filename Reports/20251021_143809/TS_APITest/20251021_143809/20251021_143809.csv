@@ -1,0 +1,15 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TS_APITest,,,,21-10-2025 14:38:12,21-10-2025 14:38:15,2.697s,ERROR
+,,,,,,,
+Test Cases/TC01 API_AddObject,,,,21-10-2025 14:38:13,21-10-2025 14:38:15,1.913s,ERROR
+"DATA BINDING - {""getName"":""Apple MacBook Pro 16"",""year"":""2019"",""namaTC"":""TC01"",""name"":""Apple MacBook Pro 16""}",,,,,,,
+variable = [:],,,,21-10-2025 14:38:13,21-10-2025 14:38:13,0.003s,PASSED
+"variable.put(""namaTC"", namaTC)",,,,21-10-2025 14:38:13,21-10-2025 14:38:13,0.010s,PASSED
+"variable.put(""name"", name)",,,,21-10-2025 14:38:13,21-10-2025 14:38:13,0.004s,PASSED
+"variable.put(""year"", year)",,,,21-10-2025 14:38:13,21-10-2025 14:38:13,0.003s,PASSED
+"comment(""Nama Test Case: "" + namaTC)",,,,21-10-2025 14:38:13,21-10-2025 14:38:13,0.080s,PASSED
+"request = findTestObject(""API_TestObject/AddObjectAPI"", variable)",,,,21-10-2025 14:38:13,21-10-2025 14:38:13,0.065s,PASSED
+response = sendRequest(request),,,,21-10-2025 14:38:13,21-10-2025 14:38:15,1.136s,PASSED
+bodyResponse = response.getResponseBodyContent(),,,,21-10-2025 14:38:15,21-10-2025 14:38:15,0.007s,PASSED
+comment(bodyResponse),,,,21-10-2025 14:38:15,21-10-2025 14:38:15,0.005s,PASSED
+"mii.JsonParser.compareNameProduct(bodyResponse, getName)",,,,21-10-2025 14:38:15,21-10-2025 14:38:15,0.058s,ERROR
